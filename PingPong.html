@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Ping pong</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        #slider {
+            -webkit-appearance: none;
+            height: 15px;
+            width: 15px;
+            background: pink;
+            margin-top: -5px;
+        }
+        
+        #slider {
+            -webkit-appearance: none;
+            height: 40px;
+            width: 400px;
+            background: pink;
+            margin-top: -5px;
+            border-radius: 30px;
+        }
+        
+        button {
+            padding: 5px;
+            background-color: steelblue;
+            border: none;
+            border-radius: 20px;
+            font-size: 13px;
+            padding: 5px;
+            font-family: Arial;
+        }
+        
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="cvs" width="400" height="600" onclick="movePlayer(event)"></canvas><br><br>
+    <input type="range" min="0" max="100" id="slider"><br><br>
+    <button id="scr" onclick="ai()">Auto Mode: On</button>
+    <script src="js.js"></script>
+
+</body>
+
+</html>
